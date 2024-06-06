@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "music_goplay_backend": {
+      "main": "src/music_goplay_backend/main.mo",
+      "type": "motoko"
+    },
+    "music_goplay_frontend": {
+      "dependencies": [
+        "music_goplay_backend"
+      ],
+      "source": [
+        "src/music_goplay_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "music_goplay_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
